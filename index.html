@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Juan David Moreno">
+        <meta name="keywords" content="Picas, Fijas, juego, picas y fijas, juego de picas y fijas, jugar picas y fijas, juegos de numeros, adivinar, adivinanzas">
+        <meta name="description" content="Picas y fijas, ¿Podrás descubrir el número secreto?, intentalo!, sé que no lo adivinarás.">
+        <meta name="robot" content="index">
+        <link rel="stylesheet" href="styles.css">
+        <title>Picas y Fijas</title>
+    </head>
+    <body>
+
+        <div class="ComoJugar" id="explicacion">
+            <h1 class="tituloAlterno">Picas y Fijas</h1>
+            <div class="contenido">
+                <ul class="ListaPrincipal">
+                    <li><b>Objetivo del juego:</b></li>
+                    <ul class="listasSecundarias">
+                        <li>El juego de Picas y Fijas consiste en adivinar un número secreto de <b>4 dígitos</b>.</li>
+                    </ul>
+                    <li><b>Características del Número Secreto:</b></li>
+                    <ul class="listasSecundarias">
+                        <li>El número secreto consta de 4 dígitos, y <b>cada uno de ellos es diferente</b>.</li>
+                    </ul>
+                    <li><b>Picas y Fijas:</b></li>
+                    <ul class="listasSecundarias">
+                        <li>Después de ingresar un número, el juego te mostrará las picas y las fijas.</li>
+                        <li>Las picas son números que pertenecen al número secreto, <b>pero no están en la posición exacta</b>.</li>
+                        <li>Las fijas son números que pertenecen al número secreto y están en <b>la misma posición que en el número secreto</b>.</li>
+                        <li>Al obtener 4 fijas, <b>ganarás</b> automáticamente.</li>
+                    </ul>
+                    <li><b>Uso de la Tecla ↑:</b></li>
+                    <ul class="listasSecundarias">
+                        <li>Puedes utilizar la tecla ↑ para <b>regresar al último número que digitaste</b>.</li>
+                    </ul>
+                </ul>
+                <button class="cerrar" id="cerrarExplicacion"><b>Cerrar</b></button>
+            </div>
+        </div>
+
+        <section class="body-container">
+            <button class="signoInterrogacion" id="comoJugar"><b>?</b></button>    
+            <div class="cabecera">
+                <h1>Picas y Fijas</h1>
+                <input class="input" type="text" maxlength="4" placeholder="Escribe un número" id="numeroInput">
+            </div>
+            <div class="section">
+
+                <table class="tabla" id="tablaJuego">
+                    <tr>
+                        <th>Número:</th>
+                        <th>Picas:</th>
+                        <th>Fijas:</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <script type="module" src="/JavaScript/logica.js"></script>
+        <script src="/JavaScript/ComoJugar.js"></script>
+        <footer class="pie">
+            <hr>
+            <p>&copy; 2023 Derechos Reservados - Juan David Moreno</p>
+            <p>Hecho por Juan David Moreno</p>
+        </footer>
+    </body>
+</html>
